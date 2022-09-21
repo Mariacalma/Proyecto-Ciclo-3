@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\pypSln.App.dominio\pypSln.dominio.csproj" />
+    <ProjectReference Include="..\pypSln.App.consola\pypSlne.App.consola.csproj" />
   </ItemGroup>
 
 </Project>

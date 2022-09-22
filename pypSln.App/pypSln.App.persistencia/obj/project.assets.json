@@ -6063,11 +6063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj",
+      "projectUniqueName": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj",
       "projectName": "pypSln.persistencia",
-      "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj",
+      "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj",
       "packagesPath": "C:\\Users\\Yordan Tarazona\\.nuget\\packages\\",
-      "outputPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\obj\\",
+      "outputPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yordan Tarazona\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6082,8 +6082,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj": {
-              "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj"
+            "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj": {
+              "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj"
             }
           }
         }

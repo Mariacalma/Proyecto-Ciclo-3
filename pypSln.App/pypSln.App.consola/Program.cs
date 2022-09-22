@@ -1,7 +1,7 @@
 ﻿using System;
 using pypSln.App.dominio;
 using pypSln.App.persistencia;
-namespace pypSln.console
+namespace pypSlne.App.console
 {
     class Program
     {

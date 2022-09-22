@@ -5,7 +5,7 @@ namespace pypSln.App.persistencia {
     public interface IFRVeterinario {
         veterinario AddVeterinario(veterinario veterinario);
         void DeleteVeterinario(int idVeterinario);
-        IEnumerable<Veterinario> GetAllVeterinario();
+        IEnumerable<veterinario> GetAllVeterinario();
         veterinario GetVeterinario(int idVeterinario);
         veterinario UpdateVeterinario(veterinario veterinario);
     }

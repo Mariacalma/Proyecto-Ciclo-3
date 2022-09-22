@@ -7,30 +7,27 @@ using System.Linq;
 
 namespace pypSln.App.persistencia{
     public class RVeterinario : IFRVeterinario  {
-        private readonly AppContext _appContext;
-        public RVeterinario(AppContext appContext) {
+        private readonly appContext _appContext;
+        public RVeterinario(appContext appContext) {
             _appContext = appContext;
         }
-        veterinario IFRVeterinario.Addveterinario(veterinario veterinario) {
+        veterinario IFRVeterinario.AddVeterinario(veterinario veterinario) {
             var veterinarioAdicionado = _appContext.veterinario.Add(veterinario);
             _appContext.SaveChanges();
             return veterinarioAdicionado.Entity;
         }
-        void RVeterinario.Deleteveterinario(int Idveterinario) {
-            var veterinarioEncontrado = _appContext.veterinario.FirstOrDefault(p => p.i == idveterinario);
-            if (veterinarioEncontrado = null) {
-                return;
-            }
+        void IFRVeterinario.DeleteVeterinario(int Idveterinario) {
+            var veterinarioEncontrado = _appContext.veterinario.FirstOrDefault(p => p.Id == Idveterinario);
             _appContext.veterinario.Remove(veterinarioEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<veterinario> IFRVeterinario.GetAllveterinario() {
+        IEnumerable<veterinario> IFRVeterinario.GetAllVeterinario() {
             return _appContext.veterinario;
         }
-        veterinario IFRVeterinario.Getveterinario(int Idveterinario) {
+        veterinario IFRVeterinario.GetVeterinario(int Idveterinario) {
             return _appContext.veterinario.FirstOrDefault(p => p.Id == Idveterinario);
         }
-        veterinario IFRVeterinario.Updateveterinario(veterinario veterinario) {
+        veterinario IFRVeterinario.UpdateVeterinario(veterinario veterinario) {
             var veterinarioEncontrado = _appContext.veterinario.FirstOrDefault(p => p.Id == veterinario.Id);
             if (veterinarioEncontrado != null) {
                 veterinarioEncontrado.Id = veterinario.Id;

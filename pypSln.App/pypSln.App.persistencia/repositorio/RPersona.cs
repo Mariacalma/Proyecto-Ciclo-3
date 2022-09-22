@@ -7,30 +7,28 @@ using System.Linq;
 
 namespace pypSln.App.persistencia{
     public class RPersona : IFRPersona  {
-        private readonly AppContext _appContext;
-        public RPersona(AppContext appContext) {
+        private readonly appContext _appContext;
+        public RPersona(appContext appContext) {
             _appContext = appContext;
         }
-        persona IFRPersona.Addpersona(persona persona) {
+        persona IFRPersona.AddPersona(persona persona) {
             var personaAdicionado = _appContext.persona.Add(persona);
             _appContext.SaveChanges();
             return personaAdicionado.Entity;
         }
-        void RPersona.Deletepersona(int Idpersona) {
-            var personaEncontrado = _appContext.persona.FirstOrDefault(p => p.i == idpersona);
-            if (personaEncontrado = null) {
-                return;
-            }
+        void IFRPersona.DeletePersona(int Idpersona) {
+            var personaEncontrado = _appContext.persona.FirstOrDefault(p => p.Id == Idpersona);
+
             _appContext.persona.Remove(personaEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<persona> IFRPersona.GetAllpersona() {
+        IEnumerable<persona> IFRPersona.GetAllPersona() {
             return _appContext.persona;
         }
-        persona IFRPersona.Getpersona(int Idpersona) {
+        persona IFRPersona.GetPersona(int Idpersona) {
             return _appContext.persona.FirstOrDefault(p => p.Id == Idpersona);
         }
-        persona IFRPersona.Updatepersona(persona persona) {
+        persona IFRPersona.UpdatePersona(persona persona) {
             var personaEncontrado = _appContext.persona.FirstOrDefault(p => p.Id == persona.Id);
             if (personaEncontrado != null) {
                 personaEncontrado.Id = persona.Id;

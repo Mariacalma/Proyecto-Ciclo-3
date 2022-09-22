@@ -7,30 +7,27 @@ using System.Linq;
 
 namespace pypSln.App.persistencia{
     public class RRegistroHistoria : IFRRegistroHistoria  {
-        private readonly AppContext _appContext;
-        public RRegistroHistoria(AppContext appContext) {
+        private readonly appContext _appContext;
+        public RRegistroHistoria(appContext appContext) {
             _appContext = appContext;
         }
-        registroHistoria IFRRegistroHistoria.AddregistroHistoria(registroHistoria registroHistoria) {
+        registroHistoria IFRRegistroHistoria.AddRegistroHistoria(registroHistoria registroHistoria) {
             var registroHistoriaAdicionado = _appContext.registroHistoria.Add(registroHistoria);
             _appContext.SaveChanges();
             return registroHistoriaAdicionado.Entity;
         }
-        void RRegistroHistoria.DeleteregistroHistoria(int IdregistroHistoria) {
-            var registroHistoriaEncontrado = _appContext.registroHistoria.FirstOrDefault(p => p.i == idregistroHistoria);
-            if (registroHistoriaEncontrado = null) {
-                return;
-            }
+        void IFRRegistroHistoria.DeleteRegistroHistoria(int IdregistroHistoria) {
+            var registroHistoriaEncontrado = _appContext.registroHistoria.FirstOrDefault(p => p.Id == IdregistroHistoria);
             _appContext.registroHistoria.Remove(registroHistoriaEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<registroHistoria> IFRRegistroHistoria.GetAllregistroHistoria() {
+        IEnumerable<registroHistoria> IFRRegistroHistoria.GetAllRegistroHistoria() {
             return _appContext.registroHistoria;
         }
-        registroHistoria IFRRegistroHistoria.GetregistroHistoria(int IdregistroHistoria) {
+        registroHistoria IFRRegistroHistoria.GetRegistroHistoria(int IdregistroHistoria) {
             return _appContext.registroHistoria.FirstOrDefault(p => p.Id == IdregistroHistoria);
         }
-        registroHistoria IFRRegistroHistoria.UpdateregistroHistoria(registroHistoria registroHistoria) {
+        registroHistoria IFRRegistroHistoria.UpdateRegistroHistoria(registroHistoria registroHistoria) {
             var registroHistoriaEncontrado = _appContext.registroHistoria.FirstOrDefault(p => p.Id == registroHistoria.Id);
             if (registroHistoriaEncontrado != null) {
                 registroHistoriaEncontrado.Id = registroHistoria.Id;

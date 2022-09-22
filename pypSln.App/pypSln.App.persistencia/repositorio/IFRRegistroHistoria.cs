@@ -3,11 +3,11 @@ using pypSln.App.dominio;
 
 namespace pypSln.App.persistencia {
     public interface IFRRegistroHistoria {
-        registroHistoria AddRegistroHistroria(registroHistoria registroHistoria);
-        void DeleteRegistroHistroria(int idRegistroHistroria);
-        IEnumerable<registroHistoria> GetAllRegistroHistroria();
-        registroHistoria GetRegistroHistroria(int idRegistroHistroria);
-        registroHistoria UpdateRegistroHistroria(registroHistoria registroHistoria);
+        registroHistoria AddRegistroHistoria(registroHistoria registroHistoria);
+        void DeleteRegistroHistoria(int idRegistroHistoria);
+        IEnumerable<registroHistoria> GetAllRegistroHistoria();
+        registroHistoria GetRegistroHistoria(int idRegistroHistoria);
+        registroHistoria UpdateRegistroHistoria(registroHistoria registroHistoria);
     }
 
 }

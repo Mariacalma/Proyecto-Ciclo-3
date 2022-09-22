@@ -3,11 +3,11 @@ using pypSln.App.dominio;
 
 namespace pypSln.App.persistencia {
     public interface IFRHistorial {
-        historial AddHistorial(historial historial);
+        historiaClinica AddHistorial(historiaClinica historial);
         void DeleteHistorial(int idHistorial);
-        IEnumerable<historial> GetAllHistorial();
-        historial GetHistorial(int idHistorial);
-        historial UpdateHistorial(historial historial);
+        IEnumerable<historiaClinica> GetAllHistorial();
+        historiaClinica GetHistorial(int idHistorial);
+        historiaClinica UpdateHistorial(historiaClinica historial);
     }
 
 }

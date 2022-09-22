@@ -6,37 +6,35 @@ using System.Linq;
 
 
 namespace pypSln.App.persistencia{
-    public class RPropietrario : IFRPropietrario  {
-        private readonly AppContext _appContext;
-        public RPropietrario(AppContext appContext) {
+    public class RPropietario : IFRPropietario  {
+        private readonly appContext _appContext;
+        public RPropietario(appContext appContext) {
             _appContext = appContext;
         }
-        propietrario IFRPropietrario.Addpropietrario(propietrario propietrario) {
-            var propietrarioAdicionado = _appContext.propietrario.Add(propietrario);
+        propietario IFRPropietario.AddPropietario(propietario propietario) {
+            var propietarioAdicionado = _appContext.propietario.Add(propietario);
             _appContext.SaveChanges();
-            return propietrarioAdicionado.Entity;
+            return propietarioAdicionado.Entity;
         }
-        void RPropietrario.Deletepropietrario(int Idpropietrario) {
-            var propietrarioEncontrado = _appContext.propietrario.FirstOrDefault(p => p.i == idpropietrario);
-            if (propietrarioEncontrado = null) {
-                return;
-            }
-            _appContext.propietrario.Remove(propietrarioEncontrado);
+        void IFRPropietario.DeletePropietario(int Idpropietario) {
+            var propietarioEncontrado = _appContext.propietario.FirstOrDefault(p => p.Id == Idpropietario);
+
+            _appContext.propietario.Remove(propietarioEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<propietrario> IFRPropietrario.GetAllpropietrario() {
-            return _appContext.propietrario;
+        IEnumerable<propietario> IFRPropietario.GetAllPropietario() {
+            return _appContext.propietario;
         }
-        propietrario IFRPropietrario.Getpropietrario(int Idpropietrario) {
-            return _appContext.propietrario.FirstOrDefault(p => p.Id == Idpropietrario);
+        propietario IFRPropietario.GetPropietario(int Idpropietario) {
+            return _appContext.propietario.FirstOrDefault(p => p.Id == Idpropietario);
         }
-        propietrario IFRPropietrario.Updatepropietrario(propietrario propietrario) {
-            var propietrarioEncontrado = _appContext.propietrario.FirstOrDefault(p => p.Id == propietrario.Id);
-            if (propietrarioEncontrado != null) {
-                propietrarioEncontrado.Id = propietrario.Id;
+        propietario IFRPropietario.UpdatePropietario(propietario propietario) {
+            var propietarioEncontrado = _appContext.propietario.FirstOrDefault(p => p.Id == propietario.Id);
+            if (propietarioEncontrado != null) {
+                propietarioEncontrado.Id = propietario.Id;
                 _appContext.SaveChanges();
             }
-            return propietrarioEncontrado;
+            return propietarioEncontrado;
         }
     }
 }

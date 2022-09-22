@@ -7,31 +7,29 @@ using System.Linq;
 
 namespace pypSln.App.persistencia{
     public class RHistorial : IFRHistorial  {
-        private readonly AppContext _appContext;
-        public RHistoria(AppContext appContext) {
+        private readonly appContext _appContext;
+        public RHistorial(appContext appContext) {
             _appContext = appContext;
         }
-        historial IFRHistorial.Addhistorial(historial historial) {
-            var historialAdicionado = _appContext.historial.Add(historial);
+        historiaClinica IFRHistorial.AddHistorial(historiaClinica historial) {
+            var historialAdicionado = _appContext.historiaClinica.Add(historial);
             _appContext.SaveChanges();
             return historialAdicionado.Entity;
         }
-        void RHistoria.Deletehistorial(int Idhistorial) {
-            var historialEncontrado = _appContext.historial.FirstOrDefault(p => p.i == idhistorial);
-            if (historialEncontrado = null) {
-                return;
-            }
-            _appContext.historial.Remove(historialEncontrado);
+        void IFRHistorial.DeleteHistorial(int idhistorial) {
+            var historialEncontrado = _appContext.historiaClinica.FirstOrDefault(p => p.Id == idhistorial);
+
+            _appContext.historiaClinica.Remove(historialEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<historial> IFRHistorial.GetAllhistorial() {
-            return _appContext.historial;
+        IEnumerable<historiaClinica> IFRHistorial.GetAllHistorial() {
+            return _appContext.historiaClinica;
         }
-        historial IFRHistorial.Gethistorial(int Idhistorial) {
-            return _appContext.historial.FirstOrDefault(p => p.Id == Idhistorial);
+        historiaClinica IFRHistorial.GetHistorial(int Idhistorial) {
+            return _appContext.historiaClinica.FirstOrDefault(p => p.Id == Idhistorial);
         }
-        historial IFRHistorial.Updatehistorial(historial historial) {
-            var historialEncontrado = _appContext.historial.FirstOrDefault(p => p.Id == historial.Id);
+        historiaClinica IFRHistorial.UpdateHistorial(historiaClinica historial) {
+            var historialEncontrado = _appContext.historiaClinica.FirstOrDefault(p => p.Id == historial.Id);
             if (historialEncontrado != null) {
                 historialEncontrado.Id = historial.Id;
                 historialEncontrado.Id_registro = historial.Id_registro;
@@ -41,8 +39,6 @@ namespace pypSln.App.persistencia{
                 historialEncontrado.Fecha_registro = historial.Fecha_registro;
                 historialEncontrado.Recomendaciones = historial.Recomendaciones;
                 historialEncontrado.Formula = historial.Formula;
-                historialEncontrado.Id = historial.Id;
-                historialEncontrado.Id = historial.Id;
                 _appContext.SaveChanges();
             }
             return historialEncontrado;

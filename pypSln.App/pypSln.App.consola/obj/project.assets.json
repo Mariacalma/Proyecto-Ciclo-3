@@ -6035,6 +6035,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
+      "pypSln.dominio >= 1.0.0",
       "pypSln.persistencia >= 1.0.0"
     ]
   },
@@ -6044,11 +6045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.Consola\\pypSlne.App.consola.csproj",
-      "projectName": "pypSlne.App.consola",
-      "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.Consola\\pypSlne.App.consola.csproj",
+      "projectUniqueName": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.consola\\pypSln.App.consola.csproj",
+      "projectName": "pypSln.App.consola",
+      "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.consola\\pypSln.App.consola.csproj",
       "packagesPath": "C:\\Users\\Yordan Tarazona\\.nuget\\packages\\",
-      "outputPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.Consola\\obj\\",
+      "outputPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yordan Tarazona\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6063,8 +6064,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj": {
-              "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj"
+            "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj": {
+              "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.dominio\\pypSln.dominio.csproj"
+            },
+            "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj": {
+              "projectPath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.persistencia\\pypSln.persistencia.csproj"
             }
           }
         }
@@ -6102,7 +6106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

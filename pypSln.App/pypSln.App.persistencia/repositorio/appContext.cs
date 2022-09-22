@@ -15,7 +15,7 @@ namespace pypSln.App.persistencia
             if(!optionsBuilder.IsConfigured)// configuracion de la base de datos
             {
             optionsBuilder
-            .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog=jornadapyp");
+            .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog=jornadapyp_v1");
             }
         }
     }

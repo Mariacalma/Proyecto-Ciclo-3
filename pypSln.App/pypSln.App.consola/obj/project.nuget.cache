@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g578hAQt6BYKPWKzfeKAW9ySVBpjkG+2RhBPSQJglRuEfcbcnOrZ9j8O/S0UmEZcqvFVa7RMarF6RFsZe7gekQ==",
+  "dgSpecHash": "5PU0JNZalvi3wOx6fFA7ptxmvdrnmNWXgY4SU6gy9XNmUhFNZG+z7W7CKJ7XAyki0J3F64K6vFZyuYDea1QloA==",
   "success": true,
-  "projectFilePath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desrrollo de Software\\Proyecto\\pypSln\\pypSln.App\\pypSln.App.Consola\\pypSlne.App.consola.csproj",
+  "projectFilePath": "D:\\Usuarios\\Yordan Tarazona\\Documents\\MisiónTic\\Desarrollo de Software\\Proyecto\\GitHub\\Proyecto-Ciclo-3\\pypSln.App\\pypSln.App.consola\\pypSln.App.consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yordan Tarazona\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Yordan Tarazona\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
